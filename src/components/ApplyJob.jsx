@@ -16,9 +16,9 @@ import { Label } from './ui/label'
 import z from 'zod'
 import { Controller, useForm } from 'react-hook-form'
 import { zodResolver } from "@hookform/resolvers/zod"
-import { applyToJob } from '@/api/apiApplications'
 import useFetch from '@/hooks/useFetch'
 import { BarLoader } from 'react-spinners'
+import { applyToJob } from '@/api/apiApplication'
 
 const schema = z.object({
     experience: z.number().min(0, {message: "Experience must be at least 0"}).int(),

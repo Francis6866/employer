@@ -1,9 +1,9 @@
-import { getApplications } from '@/api/apiApplications';
 import useFetch from '@/hooks/useFetch';
 import { useUser } from '@clerk/clerk-react';
 import React, { useEffect } from 'react'
 import { BarLoader } from 'react-spinners';
 import ApplicationCard from './ApplicationCard';
+import { getApplications } from '@/api/apiApplication';
 
 const CreatedApplications = () => {
   const { user, isLoaded } = useUser()

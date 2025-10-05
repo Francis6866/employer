@@ -1,10 +1,10 @@
 import React from 'react'
 import { Card, CardContent, CardFooter, CardHeader, CardTitle } from './ui/card'
 import { Boxes, BriefcaseBusiness, Download, School } from 'lucide-react'
-import { update_applications } from '@/api/apiApplications'
 import { BarLoader } from 'react-spinners'
 import useFetch from '@/hooks/useFetch'
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from './ui/select'
+import { update_applications } from '@/api/apiApplication'
 
 const ApplicationCard = ({ application, isCandidate = false }) => {
     const handleDownload = () => {
